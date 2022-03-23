@@ -1,0 +1,25 @@
+-d
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\build\\classes"
+-classpath
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\build\\classes;C:\\Users\\ADMIN\\Downloads\\jcalendar-1.4.jar;C:\\Users\\ADMIN\\Downloads\\mysql-connector-java-5.1.23-bin.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx-swt.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.base.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.controls.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.fxml.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.graphics.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.media.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.swing.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.web.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\src.zip"
+-sourcepath
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\build\\empty"
+-target
+15
+-encoding
+UTF-8
+-g
+-processorpath
+"C:\\Users\\ADMIN\\Downloads\\jcalendar-1.4.jar;C:\\Users\\ADMIN\\Downloads\\mysql-connector-java-5.1.23-bin.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx-swt.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.base.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.controls.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.fxml.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.graphics.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.media.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.swing.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\javafx.web.jar;C:\\Users\\ADMIN\\Downloads\\javafx-sdk-16\\lib\\src.zip;C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\build\\empty"
+-s
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\build\\generated-sources\\ap-source-output"
+-source
+15
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\Controller\\storingController.java"
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\Controller\\userController.java"
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\Controller\\vendorController.java"
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\View\\Main.java"
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\View\\MakeBooking.java"
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\View\\ManageBooking.java"
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\View\\ManageLogin.java"
+"C:\\Users\\ADMIN\\OneDrive\\Desktop\\Inventory System\\Inventory System\\src\\inventory\\system\\View\\ManageVendor.java"
