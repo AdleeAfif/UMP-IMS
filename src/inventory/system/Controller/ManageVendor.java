@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CB19056 NIK ADLEE AFIF
+ * @author CB19056 NIK ADLEE AFIF BIN NIK MOHD KAMIL
  */
 public class ManageVendor extends javax.swing.JFrame {
 
