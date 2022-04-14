@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Program Files\\JDK\\jcalendar-1.4.jar",
+        "d:\\Program Files\\JDK\\junit-4.13.2.jar",
+        "d:\\Program Files\\JDK\\mysql-connector-java-8.0.22.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.base.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.controls.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.fxml.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.graphics.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.media.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.swing.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.web.jar",
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx-swt.jar"
+    ]
+}
