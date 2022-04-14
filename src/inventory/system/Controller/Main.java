@@ -5,10 +5,8 @@
  */
 package inventory.system.Controller;
 
-/**
- *
- * @author kobinath
- */
+//Main Page
+
 public class Main extends javax.swing.JFrame {
 
     /**
