@@ -19,8 +19,10 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CB19056 NIK ADLEE AFIF
- */
+ * @author CB19056 NIK ADLEE AFIF BIN NIK MOHD KAMIL
+ * THIS IS MANAGE VENDOR MODULE
+ * NEW FUNCTION AKA SEARCH BAR FUNCTION WILL BE ADDED
+  */
 public class ManageVendor extends javax.swing.JFrame {
 
     /**
