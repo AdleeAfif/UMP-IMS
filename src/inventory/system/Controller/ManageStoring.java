@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CB19066 NURUL ANNISA & CB19081 TEOW WIN FIN
+ * @author CB19066 NURUL ANNISA & KIAN FEI
  */
 public class ManageStoring extends javax.swing.JFrame {
 
