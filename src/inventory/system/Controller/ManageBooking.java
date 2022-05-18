@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CB19084 MUHAMMAD AIMAN
+ * @author Muhd Naqiuddin
  */
 public class ManageBooking extends javax.swing.JFrame {
 

@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CB19066 NURUL ANNISA & KIAN FEI
+ * @author Saiful Azani & Tan Yi Wee
  */
 public class ManageStoring extends javax.swing.JFrame {
 
