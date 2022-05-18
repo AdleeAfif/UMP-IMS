@@ -20,7 +20,7 @@ import java.sql.*;
 
 /**
  *
- * @author CB19065 HAFIZ MUSTAQIM
+ * @author Kian Fei
  */
 public class MakeBooking extends javax.swing.JFrame {
 
