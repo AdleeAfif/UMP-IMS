@@ -21,6 +21,8 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author CB19056 NIK ADLEE AFIF
+ * Manage Vendor Module
+ * Currently Working on The Search Bar
  */
 public class ManageVendor extends javax.swing.JFrame {
 
