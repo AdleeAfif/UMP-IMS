@@ -11,6 +11,7 @@
         "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.media.jar",
         "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.swing.jar",
         "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx.web.jar",
-        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx-swt.jar"
+        "d:\\Program Files\\JDK\\javafx-sdk-16\\lib\\javafx-swt.jar",
+        "d:\\Program Files\\JDK\\rs2xml.jar"
     ]
 }
