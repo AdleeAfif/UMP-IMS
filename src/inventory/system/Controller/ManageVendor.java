@@ -6,6 +6,7 @@
 package inventory.system.Controller;
 
 import java.awt.Color;
+import net.proteanit.sql.DbUtils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -21,8 +22,6 @@ import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author CB19056 NIK ADLEE AFIF
- * Manage Vendor Module
- * Currently Working on The Search Bar
  */
 public class ManageVendor extends javax.swing.JFrame {
 
@@ -92,7 +91,6 @@ PreparedStatement pst;
                 java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
-            @Override
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
@@ -100,7 +98,6 @@ PreparedStatement pst;
         VendorTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         VendorTable.setGridColor(new java.awt.Color(255, 255, 255));
         VendorTable.addMouseListener(new java.awt.event.MouseAdapter() {
-            @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 VendorTableMouseClicked(evt);
             }
@@ -121,24 +118,36 @@ PreparedStatement pst;
 
         AddVendor.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         AddVendor.setText("Add");
-        AddVendor.addActionListener(this::AddVendorActionPerformed);
+        AddVendor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddVendorActionPerformed(evt);
+            }
+        });
 
         DeleteVendor.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         DeleteVendor.setText("Delete");
-        DeleteVendor.addActionListener(this::DeleteVendorActionPerformed);
+        DeleteVendor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DeleteVendorActionPerformed(evt);
+            }
+        });
 
         BackMenu.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         BackMenu.setText("Back");
-        BackMenu.addActionListener((java.awt.event.ActionEvent evt) -> {
-            BackMenuActionPerformed(evt);
+        BackMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackMenuActionPerformed(evt);
+            }
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Email ");
         jLabel2.setToolTipText("");
 
-        jTextField1.addActionListener((java.awt.event.ActionEvent evt) -> {
-            jTextField1ActionPerformed(evt);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -226,16 +235,23 @@ PreparedStatement pst;
         searchBar.setForeground(new java.awt.Color(204, 204, 204));
         searchBar.setText("Search Here");
         searchBar.addFocusListener(new java.awt.event.FocusAdapter() {
-            @Override
             public void focusGained(java.awt.event.FocusEvent evt) {
                 searchBarFocusGained(evt);
             }
-            @Override
             public void focusLost(java.awt.event.FocusEvent evt) {
                 searchBarFocusLost(evt);
             }
         });
-        searchBar.addActionListener(this::searchBarActionPerformed);
+        searchBar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchBarActionPerformed(evt);
+            }
+        });
+        searchBar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                searchBarKeyReleased(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -430,7 +446,6 @@ PreparedStatement pst;
         jTextField1.setText(d1.getValueAt(selectIndex, 4).toString());
         
         
-      
 
     }                                        
 
@@ -462,6 +477,20 @@ PreparedStatement pst;
             searchBar.setForeground(new Color(153,153,153));
         }
     }                                   
+
+    private void searchBarKeyReleased(java.awt.event.KeyEvent evt) {                                      
+        // TODO add your handling code here:
+        try{
+            String query = "select * from vendor_info where vendor_id=? ";
+            pst = con.prepareStatement(query);
+            pst.setString(1, searchBar.getText());
+            ResultSet rs = pst.executeQuery();
+            
+            VendorTable.setModel(DbUtils.resultSetToTableModel(rs));
+        } catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }                                     
 
     /**
      * @param args the command line arguments
