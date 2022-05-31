@@ -440,6 +440,7 @@ public class ManageStoring extends javax.swing.JFrame {
             pst.setString(6, Status);
          
             pst.executeUpdate();
+            //JOptionPane.showMessageDialog(null, "Item "+" " +Item_Name + "added by "); try new message dialog
             JOptionPane.showMessageDialog(null,"Item Added Successfully!");
             table_update();
             
