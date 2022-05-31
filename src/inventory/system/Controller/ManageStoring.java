@@ -525,6 +525,7 @@ public class ManageStoring extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private java.awt.TextArea textArea2;
     private javax.swing.JTextField txtcontents;
     private javax.swing.JTextField txtname;
     private javax.swing.JTextField txtpages;
