@@ -364,6 +364,8 @@ public class ManageStoring extends javax.swing.JFrame {
                 pst.executeUpdate();
                 JOptionPane.showMessageDialog(null,"Inventory Deletedd");
                 table_update();
+                textArea2.setEditable(false);
+                textArea2.append("An inventory was deleted.");
                 txtname.setText("");
                 txtpub.setSelectedIndex(-1);
                 txtcontents.setText("");
@@ -444,6 +446,8 @@ public class ManageStoring extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Item Added Successfully!");
             table_update();
             
+            textArea2.setEditable(false);
+            textArea2.append("Item "+Item_Name +" was added.");
             txtname.setText("");
             jTextField1.setText("");
             jTextField2.setText("");
