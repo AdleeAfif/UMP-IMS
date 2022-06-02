@@ -77,7 +77,7 @@ public class ManageStoring extends javax.swing.JFrame {
            
     }
     
-    //Test
+    
      private void table_update()
     {
        
