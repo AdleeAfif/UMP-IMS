@@ -462,7 +462,35 @@ PreparedStatement pst;
         // TODO add your handling code here:
     }                                         
 
-                                         
+    private void searchBarFocusGained(java.awt.event.FocusEvent evt) {                                      
+        // TODO add your handling code here:
+        if(searchBar.getText().equals("Search Here")){
+            searchBar.setText("");
+            searchBar.setForeground(new Color(153,153,153));
+        }
+    }                                     
+
+    private void searchBarFocusLost(java.awt.event.FocusEvent evt) {                                    
+        // TODO add your handling code here:
+        if(searchBar.getText().equals("")){
+            searchBar.setText("Search Here");
+            searchBar.setForeground(new Color(153,153,153));
+        }
+    }                                   
+
+    private void searchBarKeyReleased(java.awt.event.KeyEvent evt) {                                      
+        // TODO add your handling code here:
+        try{
+            String query = "select * from vendor_info where vendor_id=? ";
+            pst = con.prepareStatement(query);
+            pst.setString(1, searchBar.getText());
+            ResultSet rs = pst.executeQuery();
+            
+            VendorTable.setModel(DbUtils.resultSetToTableModel(rs));
+        } catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }                                     
 
     /**
      * @param args the command line arguments
