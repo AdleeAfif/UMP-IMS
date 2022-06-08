@@ -458,6 +458,7 @@ PreparedStatement pst;
         // TODO add your handling code here:
     }                                           
 
+    //new function added
     private void searchBarActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
     }                                         
