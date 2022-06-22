@@ -42,6 +42,7 @@ PreparedStatement pst;
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    //Declaration of components in the Manage Vendor module interface
     private void initComponents() {
 
         jToggleButton1 = new javax.swing.JToggleButton();
@@ -284,7 +285,7 @@ PreparedStatement pst;
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    
+    //Set connection with the IMS database
     public void Connect()
     {
         try {
@@ -299,6 +300,7 @@ PreparedStatement pst;
         
     }
     
+    //Clear data in the input boxes and search box
     private void clearInfo()
     {
         searchBar.setText("");
@@ -309,9 +311,7 @@ PreparedStatement pst;
         jTextField1.setText("");
     }
     
-    
-    
-    
+    //Update table for every new data entered and display the table
      private void table_update()
     {
        
@@ -348,9 +348,8 @@ PreparedStatement pst;
         }
     }
      
-     
+     //Add Vendor's Data into Database
     private void AddVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddVendorActionPerformed
-        //Add Vendor's Data into Database
 
         String vendor_name = txtname.getText();
         String vendor_address = txtaddress.getText();
@@ -385,8 +384,8 @@ PreparedStatement pst;
            
     }//GEN-LAST:event_AddVendorActionPerformed
 
+    //Delete Vendor's Data from Database
     private void DeleteVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteVendorActionPerformed
-        //Delete Vendor's Data into Database
 
         DefaultTableModel d1 = (DefaultTableModel)VendorTable.getModel();
         int selectIndex = VendorTable.getSelectedRow();
@@ -426,8 +425,8 @@ PreparedStatement pst;
 
     }//GEN-LAST:event_DeleteVendorActionPerformed
 
+    //Call Vendor's Data in Table
     private void VendorTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VendorTableMouseClicked
-        //Show Vendor's Data In Table
 
         DefaultTableModel d1 = (DefaultTableModel)VendorTable.getModel();
         int selectIndex = VendorTable.getSelectedRow();
@@ -455,6 +454,7 @@ PreparedStatement pst;
         // TODO add your handling code here:
     }//GEN-LAST:event_searchBarActionPerformed
 
+    //Change Search Bar colour when interact
     private void searchBarFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_searchBarFocusGained
         // TODO add your handling code here:
         if(searchBar.getText().equals("Search Here")){
@@ -463,6 +463,7 @@ PreparedStatement pst;
         }
     }//GEN-LAST:event_searchBarFocusGained
 
+    //Change Search Bar colour when not prompted
     private void searchBarFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_searchBarFocusLost
         // TODO add your handling code here:
         if(searchBar.getText().equals("")){
@@ -471,6 +472,7 @@ PreparedStatement pst;
         }
     }//GEN-LAST:event_searchBarFocusLost
 
+    //Search the Vendor based on the entered ID
     private void searchBarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchBarKeyReleased
         // TODO add your handling code here:
         try{
@@ -486,6 +488,7 @@ PreparedStatement pst;
         }
     }//GEN-LAST:event_searchBarKeyReleased
 
+    //Clear the input boxes and search box,, also display all vendors details
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
