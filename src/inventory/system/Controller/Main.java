@@ -34,6 +34,7 @@ public class Main extends javax.swing.JFrame {
         MakeBooking = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         ManageStoring = new javax.swing.JButton();
+        ManageReport = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,40 +53,60 @@ public class Main extends javax.swing.JFrame {
         LogOut.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         LogOut.setForeground(new java.awt.Color(255, 51, 51));
         LogOut.setText("Logout");
-        LogOut.addActionListener((java.awt.event.ActionEvent evt) -> {
-            LogOutActionPerformed(evt);
+        LogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogOutActionPerformed(evt);
+            }
         });
 
         ManageVendor.setBackground(new java.awt.Color(204, 204, 204));
         ManageVendor.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         ManageVendor.setForeground(new java.awt.Color(51, 51, 51));
         ManageVendor.setText("Manage Vendor");
-        ManageVendor.addActionListener((java.awt.event.ActionEvent evt) -> {
-            ManageVendorActionPerformed(evt);
+        ManageVendor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ManageVendorActionPerformed(evt);
+            }
         });
 
         ManageBooking.setBackground(new java.awt.Color(204, 204, 204));
         ManageBooking.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         ManageBooking.setForeground(new java.awt.Color(51, 51, 51));
         ManageBooking.setText("Manage Booking");
-        ManageBooking.addActionListener((java.awt.event.ActionEvent evt) -> {
-            ManageBookingActionPerformed(evt);
+        ManageBooking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ManageBookingActionPerformed(evt);
+            }
         });
 
         MakeBooking.setBackground(new java.awt.Color(204, 204, 204));
         MakeBooking.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         MakeBooking.setForeground(new java.awt.Color(51, 51, 51));
         MakeBooking.setText("Make Booking");
-        MakeBooking.addActionListener((java.awt.event.ActionEvent evt) -> {
-            MakeBookingActionPerformed(evt);
+        MakeBooking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MakeBookingActionPerformed(evt);
+            }
         });
 
         ManageStoring.setBackground(new java.awt.Color(204, 204, 204));
         ManageStoring.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         ManageStoring.setForeground(new java.awt.Color(51, 51, 51));
         ManageStoring.setText("Manage Storing");
-        ManageStoring.addActionListener((java.awt.event.ActionEvent evt) -> {
-            ManageStoringActionPerformed(evt);
+        ManageStoring.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ManageStoringActionPerformed(evt);
+            }
+        });
+
+        ManageReport.setBackground(new java.awt.Color(204, 204, 204));
+        ManageReport.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        ManageReport.setForeground(new java.awt.Color(51, 51, 51));
+        ManageReport.setText("Manage Report");
+        ManageReport.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ManageReportActionPerformed(evt);
+            }
         });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -101,7 +122,8 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(ManageBooking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(MakeBooking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ManageVendor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ManageStoring, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(ManageStoring, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ManageReport, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(233, 233, 233))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jSeparator1)
@@ -123,6 +145,8 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(ManageVendor, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(ManageStoring, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(ManageReport, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addComponent(LogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39))
@@ -164,11 +188,11 @@ public class Main extends javax.swing.JFrame {
         c.setVisible(true);     
     }//GEN-LAST:event_ManageStoringActionPerformed
 
-    private void ManageVendorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManageVendorActionPerformed
+    private void ManageVendorActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
         ManageVendor c = new ManageVendor();
         c.setVisible(true);    
-    }//GEN-LAST:event_ManageVendorActionPerformed
+    }                                            
 
     private void LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOutActionPerformed
         // TODO add your handling code here:
@@ -187,6 +211,11 @@ public class Main extends javax.swing.JFrame {
         MakeBooking b = new MakeBooking();
         b.setVisible(true);
     }//GEN-LAST:event_MakeBookingActionPerformed
+    private void ManageReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManageVendorActionPerformed
+        // TODO add your handling code here:
+        ManageReport d = new ManageReport();
+        d.setVisible(true);    
+    }//GEN-LAST:event_ManageVendorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,6 +256,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton LogOut;
     private javax.swing.JButton MakeBooking;
     private javax.swing.JButton ManageBooking;
+    private javax.swing.JButton ManageReport;
     private javax.swing.JButton ManageStoring;
     private javax.swing.JButton ManageVendor;
     private javax.swing.JLabel jLabel1;

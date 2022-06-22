@@ -95,7 +95,6 @@
                               <Component id="MakeBooking" alignment="0" max="32767" attributes="0"/>
                               <Component id="ManageVendor" alignment="0" max="32767" attributes="0"/>
                               <Component id="ManageStoring" alignment="0" max="32767" attributes="0"/>
-                              <Component id="ManageReport" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
                       </Group>
@@ -124,8 +123,6 @@
                   <Component id="ManageVendor" min="-2" pref="59" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Component id="ManageStoring" min="-2" pref="59" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="ManageReport" min="-2" pref="59" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Component id="LogOut" min="-2" pref="49" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
@@ -219,23 +216,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManageStoringActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="ManageReport">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="cc" red="cc" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Trebuchet MS" size="24" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="33" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Manage Report"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManageReportActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
