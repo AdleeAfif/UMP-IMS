@@ -448,7 +448,7 @@ public class ManageStoring extends javax.swing.JFrame {
             table_update();
             
             textArea2.setEditable(false);
-            textArea2.append("Item "+Item_Name +" was added.");
+            textArea2.append("Item "+ Serial_Num +" "+ Item_Name +" was added.\n");
             txtname.setText("");
             jTextField1.setText("");
             jTextField2.setText("");
