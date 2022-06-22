@@ -352,6 +352,7 @@ public class ManageStoring extends javax.swing.JFrame {
         int selectIndex = StoringTable.getSelectedRow();
 
         String Serial_Num = d1.getValueAt(selectIndex, 0).toString();
+        String Item_Name = d1.getValueAt(selectIndex, 2).toString();
 
         int dialogResult = JOptionPane.showConfirmDialog(null, "Do you want to Delete the Record","Warning",JOptionPane.YES_NO_OPTION);
 
@@ -365,7 +366,7 @@ public class ManageStoring extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null,"Inventory Deletedd");
                 table_update();
                 textArea2.setEditable(false);
-                textArea2.append("An inventory was deleted.");
+                textArea2.append("An inventory "+ Serial_Num +" "+ Item_Name +" was deleted.\n");
                 txtname.setText("");
                 txtpub.setSelectedIndex(-1);
                 txtcontents.setText("");
