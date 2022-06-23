@@ -95,7 +95,7 @@
                               <Component id="MakeBooking" alignment="0" max="32767" attributes="0"/>
                               <Component id="ManageVendor" alignment="0" max="32767" attributes="0"/>
                               <Component id="ManageStoring" alignment="0" max="32767" attributes="0"/>
-                               <Component id="ManageReport" alignment="0" max="32767" attributes="0"/>
+                              <Component id="ManageReport" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
                       </Group>
@@ -221,7 +221,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManageStoringActionPerformed"/>
           </Events>
         </Component>
-  <Component class="javax.swing.JButton" name="ManageReport">
+        <Component class="javax.swing.JButton" name="ManageReport">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -238,7 +238,6 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManageReportActionPerformed"/>
           </Events>
         </Component>
-
       </SubComponents>
     </Container>
   </SubComponents>
