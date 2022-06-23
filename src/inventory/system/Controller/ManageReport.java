@@ -41,7 +41,9 @@ public class ManageReport extends javax.swing.JFrame {
         Connect();
         table_update();
     }
-     public JTextField getSerial_Num(){
+
+    //Used for Search Bar
+     /*public JTextField getSerial_Num(){
         return txtname;
     }
     public JTextField getVendor_ID(){
@@ -58,11 +60,9 @@ public class ManageReport extends javax.swing.JFrame {
     }
       public JComboBox getStatus(){
         return txtpub;
-    }
+    }*/
    
-      
-    
-     Connection con;
+    Connection con;
     PreparedStatement pst;
 
     @SuppressWarnings("unchecked")
